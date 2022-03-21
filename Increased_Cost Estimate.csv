@@ -1,0 +1,20 @@
+,,,,
+,,,,
+,,,,
+,,Service,Monthly Cost,Configuration summary
+,,S3 Bucket,1275,"S3 Standard storage (50000 GB), PUT, COPY, POST, LIST requests to S3 Standard (1000000),  Data returned by S3 Select (50000), Data scanned by S3 Select (40000)."
+,,Amazon RDS (SQL Server),"2 105,92","Number of RDS (2 db.r4.2xlarge), Storage amount (3 GB)"
+,,Elastic Load Balancer,"2952,85","Number of Application Load Balancers (2), Processed bytes (2 GB per hour), Average number of new connections per ALB (25), Average connection duration (30000 seconds)"
+,,CloudFront,286,"Data transfer out to internet (3000 GB), Data transfer out to origin (1500), Number of requests (HTTPS) (1000000)."
+,,Amazon EC2,"3133,92","4 Instances (Linux, c4.4xlarge), Storage amount (2048 GB SSD (gp2))"
+,,Amazon VPC,"3665,7","2 NAT Gateway, Data Processed per NAT Gateway (40000 GB per month)."
+,,Amazon API Gateway,930,1000000 Request Per month
+,,Amazon ElastiCache,"1328,6",2 Nodes (Instance type r4.2xlarge)
+,,S3 Bucket Infrequetly Access,946,"S3 Infrequent Access storage (50000GB per month), "
+,,Amazon Route 53," $ 2 001,00 ","Hosted Zones(2), 1 Traffic Flow, Basic Checks Within AWS (200), Number of Elastic Network Interfaces (20)."
+,,,,
+,,Total,"18624,99",
+,,,,
+,,,,
+,,Changes,"Use ElastiCach to improve Security, change EC2 instance and RDS types to increase performance, use S3 bucket Infrequenctly access, add another 1 Route 53 Hosted Zone and increase their Basic Checks and Number of ENI, add an other NAT Gateway one for each Hosted Zone,",
+,,,Elastic Load Balancer,"Increase Number of processed bytes (from 1  to 2 GB per hour),  Average number of new connections per ALB (from 15 to 25)"

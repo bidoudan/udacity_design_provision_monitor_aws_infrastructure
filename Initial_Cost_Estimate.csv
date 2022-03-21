@@ -1,0 +1,13 @@
+,,,
+,,,
+,Service,Monthly Cost,Configuration summary
+,S3 Bucket,1275,"S3 Standard storage (50000 GB), PUT, COPY, POST, LIST requests to S3 Standard (1000000),  Data returned by S3 Select (50000), Data scanned by S3 Select (40000)."
+,Amazon RDS (SQL Server),"1280,66","Number of RDS (2 db.r5.xlarge), Storage amount (3 GB)."
+,Elastic Load Balancer,"1784,85","Number of Application Load Balancers (2), Processed bytes (1 GB per hour), Average number of new connections per ALB (15), Average connection duration (30000 seconds)."
+,CloudFront,286,"Data transfer out to internet (3000 GB), Data transfer out to origin (1500), Number of requests (HTTPS) (1000000)."
+,Amazon EC2,"1145,4","4 Instances (Linux, t2.xlarge), Storage amount (2048 GB SSD (gp2))."
+,Amazon VPC,"1382,85","1 NAT Gateway, Data Processed per NAT Gateway (30000 GB per month)."
+,Amazon API Gateway,930,1000000 Request Per month.
+,Amazon Route 53,988,"Hosted Zones(1), 1 Traffic Flow, Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)."
+,,,
+,Total,"8084,76",

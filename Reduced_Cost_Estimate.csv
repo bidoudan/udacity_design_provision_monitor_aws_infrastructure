@@ -1,0 +1,23 @@
+,,,,
+,,,,
+,,,,
+,,Service,Monthly Cost,Configuration summary
+,,S3 Bucket,580,"S3 Standard storage (20000 GB), PUT, COPY, POST, LIST requests to S3 Standard (1000000),  Data returned by S3 Select (50000), Data scanned by S3 Select (40000)."
+,,S3 Bucket Glacier,138,"S3 Standard storage (30000 GB), PUT, COPY, POST, LIST requests to S3 Standard (1000000),  "
+,,Amazon RDS (SQL Server),780,"Number of RDS (2 db.r3.large), Storage amount (2 TB)"
+,,Elastic Load Balancer,"1784,85","Number of Application Load Balancers (2), Processed bytes (1 GB per hour), Average number of new connections per ALB (15), Average connection duration (30000 seconds)"
+,,CloudFront,286,"Data transfer out to internet (3000 GB), Data transfer out to origin (1500), Number of requests (HTTPS) (1000000)."
+,,Amazon EC2,597,"4 Instances (Linux, a1.xlarge), Storage amount (1024 GB SSD (gp2))"
+,,Amazon VPC,"482,85","1 NAT Gateway, Data Processed per NAT Gateway (10000 GB per month)."
+,,Amazon Route 53," $ 506,75 ","Hosted Zones(1), 1 Traffic Flow, Basic Checks Within AWS (50), Number of Elastic Network Interfaces (5)."
+,,Amazon API Gateway,930,1000000 Request Per month
+,,,,
+,,Total,"6085,45",
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,Changes,"Reduce S3 Bucket Standard Strorage from 50000 to 20000, and use S3 Bucket GLacier with 30000 to store some of the app data that would rarely be revisited by users, change RDS type to db.r3.large and reduce storage to 2T, change EC2 instances type to a1.xlarge and reduce the storage to 1Tb, reduce Route 53 Basic Checks Within AWS, reduce number od ENI to the half..",
